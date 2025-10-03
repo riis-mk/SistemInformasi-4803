@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Web - Paris</title>
+
+  <!-- HTML Favicon -->
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/7/74/Flat_tick_icon.svg">
+  
+  <!-- HTML CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #0c8c00;
+      color: white;
+      padding: 20px;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #333;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin: 8px 0;
+    }
+    .social-links {
+      margin: 20px 0;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    .social-links img:hover {
+      transform: scale(1.2);
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 30px auto;
+      width: 70%;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      padding: 10px;
+    }
+    th {
+      background-color: #199101;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Heading -->
+  <header>
+    <h1>Personal Web</h1>
+
+  </header>
+
+  <!-- HTML Picture -->
+       <h2>Paris</h2>
+    <h3>102022400067</h3>
+  <img src="PERFECT_ONE.jpg" alt="Foto Profil" class="profile-pic">
+      <h3>Fakultas: Rekaya Industri</h3>
+    <h3>Program Studi: Sistem Informasi</h3>
+
+  <!-- Social Links -->
+  <div class="social-links">
+    <!-- HTML Link -->
+    <a href="https://github.com/riis-mk" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+    </a>
+    <a href="https://www.instagram.com/riis.mk/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+    </a>
+  </div>
+
+
+  <!-- Date and Time -->
+  <h3>Tanggal & Waktu Saat Ini:</h3>
+  <p id="datetime"></p>
+
+  <!-- Table Hobby & Skill -->
+  <h2>Hobby dan Skill</h2>
+  <table>
+    <tr>
+      <th>Hobby</th>
+      <th>Skill</th>
+    </tr>
+    <tr>
+      <td>  Ngoding      </td>
+      <td>Web Development</td>
+    </tr>
+    <tr>
+      <td>   Gaming      </td>
+      <td>Problem Solving</td>
+    </tr>
+    <tr>
+      <td>  Fotografi </td>
+      <td>UI/UX Design</td>
+    </tr>
+    <tr>
+      <td>   Membaca   </td>
+      <td>Data Analysis</td>
+    </tr>
+  </table>
+
+  <!-- Script Date and Time -->
+  <script>
+    document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+  </script>
+</body>
+</html>
